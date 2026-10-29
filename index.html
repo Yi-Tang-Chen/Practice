@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="C and firmware interview questions with saved answers, reading checks, and reference answers.">
+  <title>C & Firmware Practice</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script>
+  <script defer src="grader.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to questions</a>
+  <aside class="sidebar" aria-label="Practice navigation">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">C/</span><span>Firmware<br><strong>Practice notebook</strong></span></div>
+    <p class="eyebrow">QUESTION BANK</p>
+    <nav id="groups" aria-label="Question categories"></nav>
+    <div class="sidebar-note"><span class="saved-dot" aria-hidden="true"></span><span id="storage-note">Answers saved in this browser</span></div>
+    <button id="export" class="quiet export" type="button">Download answers <span aria-hidden="true">↗</span></button>
+    <p id="bank-count" class="sidebar-foot"></p>
+  </aside>
+  <main id="main" tabindex="-1">
+    <header class="page-header">
+      <div><p class="eyebrow">YOUR PRACTICE NOTEBOOK</p><h1 id="title">Code reading</h1><p id="description" class="description"></p></div>
+      <span id="mode-badge" class="mode-badge">Auto-graded</span>
+    </header>
+    <details class="assumptions"><summary>Instructions & platform assumptions</summary><div id="instructions"></div></details>
+    <div id="scope-controls" class="scopes" role="group" aria-label="Reading question set">
+      <button type="button" data-scope="pointers">Pointers · R05–R12</button>
+      <button type="button" data-scope="memory">Memory · R21–R25, R28–R32</button>
+      <button type="button" data-scope="all">All 32</button>
+    </div>
+    <section class="progress-panel" aria-label="Progress in selected set">
+      <div class="progress-head"><span id="progress-title">This set</span><span id="progress-count"></span></div>
+      <progress id="progress" max="8" value="0" aria-label="Answered questions"></progress>
+      <div id="statistics" class="statistics"></div>
+    </section>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Filter questions">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter="review">Needs review</button>
+        <button type="button" data-filter="unanswered">Unanswered</button>
+      </div>
+      <button id="check-all" class="primary" type="button">Check answers <span aria-hidden="true">→</span></button>
+    </div>
+    <div id="result-summary" class="result-summary" role="status" aria-live="polite"></div>
+    <div id="questions"></div>
+    <footer class="page-footer"><span id="footer-count"></span><button id="reset" class="quiet" type="button">Reset this set</button></footer>
+  </main>
+</body>
+</html>
